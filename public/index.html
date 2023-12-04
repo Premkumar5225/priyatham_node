@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #424B54;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.profile-pic img {
+    max-width: 70%;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+section.about-section#about {
+    background-color: #fefae0; 
+}
+
+section.about-section#education {
+    background-color: #fefae0; 
+}
+
+section.about-section#skill {
+    background-color: #faedcd; 
+}
+
+section.about-section#projects {
+    background-color: #faedcd; 
+}
+
+section.about-section#experience {
+    background-color: #fefae0; 
+}
+
+section.about-section#blogs {
+    background-color: #fefae0; 
+}
+
+.education-list,
+.skill-list,
+.project-list,
+.experience-list,
+.blog-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.education-item,
+.skill-item,
+.project-item,
+experience-item,
+blog-item {
+    
+    padding: 1rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-color: #faedcd; 
+    color: #424B54;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.contact-info,
+.social-media {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    color: #424B54;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .about-section, .education-section, .skill-section, .project-section, .experience-section, .blogs-section {
+        padding: 0.5rem;
+    }
+
+    section.about-section#about {
+        background-color: #fefae0; 
+    }
+    
+    section.about-section#education {
+        background-color: #faedcd; 
+    }
+    
+    section.about-section#skill {
+        background-color: #fefae0; 
+    }
+    
+    section.about-section#projects {
+        background-color: #faedcd; 
+    }
+    
+    section.about-section#experience {
+        background-color: #fefae0; 
+    }
+    
+    section.about-section#blogs {
+        background-color: #faedcd; 
+    }
+
+    .profile-pic img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const logo = document.querySelector('.logo img');
+
+    logo.addEventListener('click', function() {
+        location.reload();
+    });
+});
+
+    </script>
+    <header>
+        <div class="logo">
+            <img src="path_to_your_logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section" id="about">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hello, This is Priyatham. </p>
+                <p>I am passionate about learning new things, meeting new people.</p>
+                <p>I am a computer science student.</p>
+            </div>
+
+            <div class="profile-pic">
+                <img src="https://images.unsplash.com/photo-1695341036698-32993102622a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80"
+                    alt="Profile Picture">
+            </div>
+        </section>
+
+        <section class="about-section" id="education">
+            <div class="about-text">
+                <h1>Education</h1>
+            </div>
+
+            <div class="education-list">
+                <div class="education-item">
+                    <h1>University of New Haven</h1>
+                    <h3>Computer Science | 2024</h3>
+                </div>
+                <div class="education-item">
+                    <h1>Vellore Institute of Technology</h1>
+                    <h3>Integrated Software Engineering | 2022</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="skill">
+            <div class="about-text">
+                <h1>Skills</h1>
+            </div>
+
+            <div class="skill-list">
+                <div class="skill-item">
+                    <h1>C, C++</h1>
+                    <p>C and C++ are powerful programming languages widely used for system-level and application-level development. C, known for its efficiency and portability, forms the foundation for many operating systems and software applications. C++, an extension of C, introduces object-oriented programming, allowing for modular, reusable code and is prominent in game development and high-performance applications.</p>
+                </div>
+                <div class="skill-item">
+                    <h1>Java</h1>
+                    <p>Java is a versatile, object-oriented programming language known for its platform independence. It enables developers to create robust, high-performance applications for various domains, from enterprise software to mobile apps and web applications. Java's extensive library ecosystem and strong community support make it a popular choice for developers worldwide.</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <section class="about-section" id="projects">
+            <div class="about-text">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="project-list">
+                <div class="project-item">
+                    <h2>Project 1</h2>
+                    <h3>Role | Technologies Used | Duration</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id qui impedit deleniti, aliquid totam consequuntur neque nemo quo fugiat maxime minus laborum a eligendi modi nostrum error facere eos!</p>
+                </div>
+                <div class="project-item">
+                    <h2>Project 2</h2>
+                    <h3>Role | Technologies Used | Duration</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id qui impedit deleniti, aliquid totam consequuntur neque nemo quo fugiat maxime minus laborum a eligendi modi nostrum error facere eos!.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="experience">
+            <div class="about-text">
+                <h1>Experience</h1>
+            </div>
+
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h2>Company 1 Name</h2>
+                    <h3>Company 1 Motto</h3>
+                    <h3>Experience</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id qui impedit deleniti, aliquid totam consequuntur neque nemo quo fugiat maxime minus laborum a eligendi modi nostrum error facere eos!</p>
+                </div>
+                <div class="experience-item">
+                    <h2>Company 2 Name</h2>
+                    <h3>Company 2 Motto</h3>
+                    <h3>Experience</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id qui impedit deleniti, aliquid totam consequuntur neque nemo quo fugiat maxime minus laborum a eligendi modi nostrum error facere eos!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="blogs">
+            <div class="about-text">
+                <h1>Blog</h1>
+            </div>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <h2>Title 1</h2>
+                    <h3>sub title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, minus aliquam sint quidem aspernatur, rem nisi ab sequi beatae magnam voluptate delectus? Quibusdam sequi voluptatibus mollitia pariatur blanditiis laboriosam quae.</p>
+                </div>
+                <div class="blog-item">
+                    <h2>Title 2</h2>
+                    <h3>sub title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id qui impedit deleniti, aliquid totam consequuntur neque nemo quo fugiat maxime minus laborum a eligendi modi nostrum error facere eos!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="about-section" id="contact">
+        <div class="contact-info">
+            <h3>Contact Info</h3>
+            <p>Address: 123 Main St, City</p>
+            <p>Phone: (555) 555-5555</p>
+            <p>Email: example@gmail.com</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
